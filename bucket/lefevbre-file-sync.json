@@ -10,22 +10,22 @@
     "hash": "919e203b9a3ae3c405c796d2428b0f1fd099e78c353e1670c9e84f9351f9a0a8",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\tasks.bin\")) { New-Item \"$dir\\tasks.bin\" | Out-Null }",
-        "if (Test-Path \"$persist_dir\\RcloneBrowser.ini\") {",
-        "   Copy-Item \"$persist_dir\\RcloneBrowser.ini\" \"$dir\"",
+        "if (Test-Path \"$persist_dir\\LefebvreFileSync.ini\") {",
+        "   Copy-Item \"$persist_dir\\LefebvreFileSync.ini\" \"$dir\"",
         "} else {",
         "   $forwardPer = \"$persist_dir\\downloads\" -replace '\\\\', '/'",
-        "   Set-Content \"$dir\\RcloneBrowser.ini\" @(",
+        "   Set-Content \"$dir\\LefebvreFileSync.ini\" @(",
         "       '[Settings]', 'checkRcloneBrowserUpdates=false', 'checkRcloneUpdates=false', \"defaultDownloadDir=$forwardPer\"",
         "   ) -Encoding Ascii",
         "}"
     ],
     "uninstaller": {
-        "script": "Copy-Item \"$dir\\RcloneBrowser.ini\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
+        "script": "Copy-Item \"$dir\\LefebvreFileSync.ini\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
     },
     "shortcuts": [
         [
-            "RcloneBrowser.exe",
-            "Rclone Browser"
+            "LefebvreFileSync.exe",
+            "Lefebvre File Sync"
         ]
     ],
     "persist": [

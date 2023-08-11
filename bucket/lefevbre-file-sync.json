@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0.5",
+    "description": "A simple rclone GUI",
+    "homepage": "https://github.com/lefevbre-organization/FileSync",
+    "license": "MIT",
+    "suggest": {
+        "rclone": "rclone"
+    },
+    "url": "https://github.com/lefevbre-organization/FileSync/releases/download/v2.0.0.5/LefebvreFileSync-v2.0.0.5.msi",
+    "hash": "919e203b9a3ae3c405c796d2428b0f1fd099e78c353e1670c9e84f9351f9a0a8",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\tasks.bin\")) { New-Item \"$dir\\tasks.bin\" | Out-Null }",
+        "if (Test-Path \"$persist_dir\\RcloneBrowser.ini\") {",
+        "   Copy-Item \"$persist_dir\\RcloneBrowser.ini\" \"$dir\"",
+        "} else {",
+        "   $forwardPer = \"$persist_dir\\downloads\" -replace '\\\\', '/'",
+        "   Set-Content \"$dir\\RcloneBrowser.ini\" @(",
+        "       '[Settings]', 'checkRcloneBrowserUpdates=false', 'checkRcloneUpdates=false', \"defaultDownloadDir=$forwardPer\"",
+        "   ) -Encoding Ascii",
+        "}"
+    ],
+    "uninstaller": {
+        "script": "Copy-Item \"$dir\\RcloneBrowser.ini\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
+    },
+    "shortcuts": [
+        [
+            "RcloneBrowser.exe",
+            "Rclone Browser"
+        ]
+    ],
+    "persist": [
+        "downloads",
+        "tasks.bin"
+    ],
+    "checkver": {
+        "github": "https://github.com/lefevbre-organization/FileSync"
+    },
+    "autoupdate": {
+        "url": "https://github.com/lefevbre-organization/FileSync/releases/download/v$version/LefebvreFileSync-v$version.msi"
+    }
+}

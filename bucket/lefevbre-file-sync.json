@@ -32,9 +32,7 @@
         "downloads",
         "tasks.bin"
     ],
-    "checkver": {
-        "github": "https://github.com/lefevbre-organization/FileSync"
-    },
+    "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/lefevbre-organization/FileSync/releases/download/v$version/LefebvreFileSync-v$version.msi"
     }

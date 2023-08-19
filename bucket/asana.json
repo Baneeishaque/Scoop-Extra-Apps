@@ -1,0 +1,44 @@
+{
+    "version": "1.15.0",
+    "description": "Asana is a work management platform designed to help teams organize, track, and manage their work.",
+    "homepage": "https://asana.com",
+    "license": "Proprietary",
+    "architecture": {
+        "64bit": {
+            "url": "https://desktop-downloads.asana.com/win32_x64/prod/latest/AsanaSetup.exe#/dl.7z",
+            "hash": "1a0d1811539b514cfddb741fc3f672a8c4443f224f502b3510447548af1684a9"
+        },
+        "32bit": {
+            "url": "https://desktop-downloads.asana.com/win32_ia32/prod/latest/AsanaSetup.exe#/dl.7z",
+            "hash": "ffe1bc70514f4c2bd022cb144477b4fd19ed1e55f619934b57b52d4e5afd5f3b"
+        }
+    },
+    "pre_install": [
+        "Expand-7ZipArchive \"$dir\\Asana-*-full.nupkg\" -ExtractDir 'lib\\net45' -Removal",
+        "Remove-Item \"$dir\\lib\", \"$dir\\Update*\", \"$dir\\*.gif\", \"$dir\\*.ico\", \"$dir\\RELEASES*\" -Recurse"
+    ],
+    "shortcuts": [
+        [
+            "Asana.exe",
+            "Asana"
+        ]
+    ],
+    "checkver": {
+        "script": [
+            "$tempFile = New-TemporaryFile",
+            "Invoke-WebRequest -Uri \"https://desktop-downloads.asana.com/win32_x64/prod/latest/AsanaSetup.exe\" -OutFile $tempFile -UseBasicParsing",
+            "Write-Output (Get-Item $tempfile).VersionInfo.FileVersion"
+        ],
+        "regex": "(.+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://desktop-downloads.asana.com/win32_x64/prod/latest/AsanaSetup.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://desktop-downloads.asana.com/win32_ia32/prod/latest/AsanaSetup.exe#/dl.7z"
+            }
+        }
+    }
+}

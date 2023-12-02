@@ -1,13 +1,13 @@
 {
-    "version": "1.6.3",
+    "version": "1.7.2",
     "description": "Free, Secure & Reliable Messages and Calls",
     "homepage": "https://botim.me",
     "license": {
         "identifier": "Proprietary",
         "url": "https://botim.me/terms"
     },
-    "url": "https://cdn-web-sg.botim.me/downloads/desktop/windows/1.6.3/BOTIM_Setup_1.6.3.exe",
-    "hash": "2f108c92fdca9baaf283a1e025049739895bd6382c1be58113bc43ec31a5c33a",
+    "url": "https://cdn-web-sg.botim.me/downloads/desktop/windows/1.7.2/Botim_Setup_1.7.2.exe",
+    "hash": "4d5f9bbb85ad4951c74975c31c9bec3048532d84e63f61a2043fbacfc6b0bce4",
     "installer": {
         
     },

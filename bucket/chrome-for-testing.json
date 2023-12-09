@@ -1,0 +1,51 @@
+{
+    "version": "120.0.6099.71",
+    "description": "Chrome for Testing is a dedicated flavor of Chrome targeting the testing use case, without auto-update, integrated into the Chrome release process, made available for every Chrome release",
+    "homepage": "https://developer.chrome.com/blog/chrome-for-testing",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.google.com/chrome/privacy/eula_text.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.71/win64/chrome-win64.zip",
+            "hash": "ced0b611509e37eea5b9bbda4ad6469ccaa81db9f056aa5f29b488d6a1662883",
+            "extract_dir": "chrome-win64"
+        },
+        "32bit": {
+            "url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.71/win32/chrome-win32.zip",
+            "hash": "0840c9bb29c227547f87f26895e5d79aa03679499f02c8878bef0bdae70bea70",
+            "extract_dir": "chrome-win32"
+        }
+    },
+    "bin": [
+        [
+            "chrome.exe",
+            "chrome"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "chrome.exe",
+            "Google Chrome"
+        ]
+    ],
+    "env_set": {
+        "CHROME_EXECUTABLE": "$dir\\chrome.exe"
+    },
+    "checkver": {
+        "url": "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions.json",
+        "jsonpath": "$.channels.Stable.version",
+        "regex": "([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/$version/win64/chrome-win64.zip"
+            },
+            "32bit": {
+                "url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/$version/win32/chrome-win32.zip"
+            }
+        }
+    }
+}

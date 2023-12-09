@@ -27,7 +27,7 @@
     "shortcuts": [
         [
             "chrome.exe",
-            "Google Chrome"
+            "Chrome for Testing"
         ]
     ],
     "env_set": {

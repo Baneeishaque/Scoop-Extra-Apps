@@ -1,16 +1,16 @@
 {
-    "version": "2.1.0",
+    "version": "2.1.2",
     "description": "Asana is a work management platform designed to help teams organize, track, and manage their work.",
     "homepage": "https://asana.com",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
             "url": "https://desktop-downloads.asana.com/win32_x64/prod/latest/AsanaSetup.exe#/dl.7z",
-            "hash": "74e24fc635904c4edf0c8203abf1ecddf11f909e8c6a1fc43595a0d7ba497282"
+            "hash": "c489b4961e7e44df3b66690060213d282b491b3ec14c5adea656dde827f1a860"
         },
         "32bit": {
             "url": "https://desktop-downloads.asana.com/win32_ia32/prod/latest/AsanaSetup.exe#/dl.7z",
-            "hash": "968d68482a1d1c76f31062fcd24110ac42e5f8dedfff927b3de0db6abd6fd3e3"
+            "hash": "be0d745457ddbe720b5d4289c4deddcf6c00fefa75dd4b650e4007a949a90018"
         }
     },
     "pre_install": [

@@ -1,0 +1,36 @@
+{
+    "version": "1.29.216",
+    "description": "Next-generation IDE by JetBrains (Preview).",
+    "homepage": "https://www.jetbrains.com/fleet/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.jetbrains.com/fleet/installers/windows_x64/Fleet-1.29.216.zip",
+            "hash": "6bbed39b4b6f04ade494c102e351d6d6edf930653400e03f56b7d392214e5cb9"
+        }
+    },
+    "bin": "Fleet.exe",
+    "shortcuts": [
+        [
+            "Fleet.exe",
+            "Fleet (Preview)"
+        ]
+    ],
+    "checkver": {
+        "url": "https://data.services.jetbrains.com/products/releases?code=FL&type=preview&latest=true&platform=zip",
+        "jsonpath": "$.FL[0].build"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.jetbrains.com/fleet/installers/windows_x64/Fleet-$version.zip"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}

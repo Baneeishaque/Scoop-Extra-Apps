@@ -1,0 +1,19 @@
+{
+    "version": "1.55",
+    "description": "A program that fetches and displays lyrics to the currently playing song in Spotify, Tidal, and VLC.",
+    "homepage": "https://github.com/SimonIT/spotifylyrics",
+    "license": "MIT",
+    "url": "https://github.com/SimonIT/spotifylyrics/releases/download/1.55/SpotifyLyrics.exe",
+    "hash": "5d62b564e39c0f748847ce00d04e34bad1471cccc115886d4a8773e7485cd432",
+    "bin": "SpotifyLyrics.exe",
+    "shortcuts": [
+        [
+            "SpotifyLyrics.exe",
+            "Spotify Lyrics"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/SimonIT/spotifylyrics/releases/download/$version/SpotifyLyrics.exe"
+    }
+}

@@ -9,7 +9,7 @@
     "url": "https://cdn-web-sg.botim.me/downloads/desktop/windows/1.7.5/Botim_Setup_1.7.5.exe",
     "hash": "8cda6cf05a52fa96ba56f8a844a61cac40acbba2a1ba34e7104936c060da66f0",
     "installer": {
-        
+        "file": "$fname"
     },
     "uninstaller": {
         "script": "Start-Process -FilePath \"$env:LOCALAPPDATA\\Programs\\BOTIM\\Uninstall BOTIM.exe\" -ArgumentList \"/S\" -Wait"

@@ -1,10 +1,10 @@
 {
-    "version": "2.90.6",
+    "version": "2.91.5",
     "description": "Atomic Wallet is a decentralized cryptocurrency wallet.",
     "homepage": "https://atomicwallet.io/",
     "license": "Proprietary",
-    "url": "https://releases.atomicwallet.io/AtomicWallet-2.90.6.exe#/dl.7z",
-    "hash": "5cd22483169f45361af88f2a171983f0a79f042291506e254d4bc924ca3bfd1e",
+    "url": "https://releases.atomicwallet.io/AtomicWallet-2.91.5.exe#/dl.7z",
+    "hash": "cc3adc81d01b5c366ec1df39f36242e3f5c1602e94ad2fdcec0112a2019755c6",
     "architecture": {
         "64bit": {
             "installer": {

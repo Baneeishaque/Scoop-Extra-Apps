@@ -1,5 +1,5 @@
 {
-    "version": "25.6",
+    "version": "25.8",
     "description": "Powerful multipurpose network administration tool for Windows and macOS",
     "homepage": "https://www.softperfect.com/products/networkscanner",
     "license": "Proprietary",
@@ -12,7 +12,7 @@
         }
     },
     "url": "https://www.softperfect.com/download/files/netscan_portable.zip",
-    "hash": "8904420be526d9186d3bf29e659f029fc06ed84aa246c94f2317e6a31cd3cc75",
+    "hash": "284c2622d0eee1d09e562306c3943a57279452f16ee8ad10397010a39b6d8e62",
     "bin": "netscan.exe",
     "shortcuts": [
         [

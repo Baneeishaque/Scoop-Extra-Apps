@@ -1,5 +1,5 @@
 {
-    "version": "139.0.7258.154",
+    "version": "140.0.7339.80",
     "description": "Chrome for Testing is a dedicated flavor of Chrome targeting the testing use case, without auto-update, integrated into the Chrome release process, made available for every Chrome release",
     "homepage": "https://developer.chrome.com/blog/chrome-for-testing",
     "license": {
@@ -8,13 +8,13 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/139.0.7258.154/win64/chrome-win64.zip",
-            "hash": "d15444b36449f2e45d0dffb222342fe86a980052c60b18d5203f14f895510b70",
+            "url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/140.0.7339.80/win64/chrome-win64.zip",
+            "hash": "92c2de5845e3d392169c1c1e179779c242df8dd1982464b16c29bd8f1cec3ffd",
             "extract_dir": "chrome-win64"
         },
         "32bit": {
-            "url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/139.0.7258.154/win32/chrome-win32.zip",
-            "hash": "a914bfcc224e4bf6d10b083bc68da207a7c25fe20d4d098a684d423e7c48d1a6",
+            "url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/140.0.7339.80/win32/chrome-win32.zip",
+            "hash": "1d35cf1418d4bc9e2dccf1e7dd983b6279cc772d2e8452910041257958de78cd",
             "extract_dir": "chrome-win32"
         }
     },
